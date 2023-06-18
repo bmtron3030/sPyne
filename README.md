@@ -3,11 +3,9 @@
 sPyne is a Rust-built API that that offers a range of functions for running one or multiple Python files as "routines". These functions provide a convenient way to incorporate Python functionality in the form of a sturdy backbone, or _spine_, with the help of Rust. This combination enables applications to harness the power of both both languages within a single project, combining the performance and safety of Rust with the extensive libraries and ecosystem of Python.
 
 ### Requirements
-
 This file requires that the latest version of ````rustup```` is downloaded globally onto your device. To download, visit https://www.rust-lang.org/tools/install.
 
 ### Installation
-
 1. Make sure the latest version of ````rustup```` is downloaded globally onto your device. (To check if it is downloaded, type: ````rustup --version```` for the current version installed on your device)
 2. Download the ````spyne```` folder
 3. Save it into any given folder directory
@@ -21,8 +19,13 @@ This file requires that the latest version of ````rustup```` is downloaded globa
 2. Paste the ````use mod spyne;```` line to import it into any Rust file
 3. Call any function from the ````spyne.rs```` file with ````spyne::---````
 
-### Examples
+### Limitations
+- Functions do not have any return types, they strictly execute any given Python file or files.
+- Arguments need to be passed in the form of an array of strings, even if only one arg plans to be used.
+- Python files need to convert the given arguments from strings into their desired data types.
+- Routine sets are unable to have their order altered once execution starts.
 
+### Examples
 1. The following snippet runs a routine that prints "Hello World!".
 
 (_All required files for this example can be found in the "/src/example_one/" folder of the /spyne/ project_)
@@ -123,3 +126,9 @@ fn main() {
     spyne::run_routine_in_for_loop_no_args(&file_string, true, loop_max);
 }
 ````
+
+### Future Planned Updates To Come
+- _As-Is Argument Passing_: Pass in a vector of arguments of ANY type other than strings so no data conversion is required.
+- _Function Return Values_: Functions will be able to return values for more programability within Rust projects.
+- _async/.await Functionality_: Routines will be able to run standard or as threads with the built-in Rust _await_ and _.async_ functionality.
+- _Dynamic Routine Reordering_: Allow routine sets to have their routines reordered after X amount of them have been executed already.
