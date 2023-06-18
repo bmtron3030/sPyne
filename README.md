@@ -9,8 +9,8 @@ This file requires that the latest version of ````rustup```` is downloaded globa
 ### Installation
 
 1. Make sure the latest version of ````rustup```` is downloaded globally onto your device. (To check if it is downloaded, type: ````rustup --version```` for the current version installed on your device)
-2. Download the ````spyne.zip```` folder
-3. Unzip it into any given folder directory
+2. Download the ````spyne```` folder
+3. Save it into any given folder directory
 4. Open a terminal window
 5. Navigate to the ````spyne```` folder directory with the terminal window
 6. Run ````cargo build```` to build the project
