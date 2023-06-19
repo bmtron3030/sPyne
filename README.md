@@ -127,7 +127,7 @@ fn main() {
 }
 ````
 
-### Future Planned Updates To Come
+### Future/Planned Updates To Come
 - _As-Is Argument Passing_: Pass in a vector of arguments of ANY type other than strings so no data conversion is required.
 - _Function Return Values_: Functions will be able to return values for more programability within Rust projects.
 - _async/.await Functionality_: Routines will be able to run standard or as threads with the built-in Rust _await_ and _.async_ functionality.
