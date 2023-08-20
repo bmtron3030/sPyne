@@ -1,6 +1,6 @@
 # sPyne
 
-sPyne is a Rust-built API that that offers a range of functions for running one or multiple Python files as "routines". These functions provide a convenient way to incorporate Python functionality in the form of a sturdy backbone, or _spine_, with the help of Rust. This combination enables applications to harness the power of both both languages within a single project, combining the performance and safety of Rust with the extensive libraries and ecosystem of Python.
+sPyne is a Rust-built API that offers a range of functions for running one or multiple Python files as "routines". These functions provide a convenient way to incorporate Python functionality in the form of a sturdy backbone, or _spine_, with the help of Rust. This combination enables applications to harness the power of both both languages within a single project, combining the performance and safety of Rust with the extensive libraries and ecosystem of Python.
 
 ### Requirements
 This file requires that the latest version of ````rustup```` is downloaded globally onto your device. To download, visit https://www.rust-lang.org/tools/install.
